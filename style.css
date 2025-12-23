@@ -1,0 +1,154 @@
+/* CSS (Cascading Style Sheets) - язык стилей для оформления HTML-документов */
+
+/* Селектор * применяет стили ко ВСЕМ элементам на странице */
+
+
+body {
+    background: #1a1a1a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+h1 {
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px
+}
+
+img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+article {
+    background: #2a2a2a;
+    color: white;
+}
+article:hover {
+    transform: translateY(-5px); /* Сдвигает элемент на 5px вверх при наведении */
+}
+
+
+/* 
+ТОЧКА В CSS:
+В CSS точка (.) перед именем указывает на КЛАСС.
+Без точки - это селектор по ТЕГУ.
+Пример:
+  header {} - стили для всех тегов <header>
+  .header {} - стили для всех элементов с class="header"
+*/
+
+/* body - селектор по тегу <body> */
+body {
+    font-family: Arial, sans-serif; /* Устанавливает шрифт Arial с запасным sans-serif */
+    background: #1a1a1a; /* Устанавливает темный цвет фона страницы */
+    color: white; /* Устанавливает белый цвет текста */
+    padding: 20px; /* Добавляет внутренние отступы 20px со всех сторон */
+    max-width: 1200px; /* Ограничивает максимальную ширину контента */
+    margin: 0 auto; /* Центрирует контент по горизонтали (auto для left/right) */
+}
+
+/* header - селектор по тегу <header> */
+header {
+    text-align: center; /* Выравнивает текст по центру */
+    margin-bottom: 30px; /* Добавляет отступ снизу 30px */
+}
+
+/* h1 - селектор по тегу <h1> */
+h1 {
+    color: #4a90e2; /* Устанавливает синий цвет текста */
+    margin-bottom: 10px; /* Добавляет отступ снизу 10px */
+}
+
+/* section - селектор по тегу <section> */
+section {
+    display: grid; /* Включает CSS Grid Layout для дочерних элементов */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    /* 
+    grid-template-columns создает сетку колонок:
+    - repeat() повторяет шаблон
+    - auto-fit автоматически подбирает количество колонок
+    - minmax(280px, 1fr) устанавливает минимальную ширину 280px и максимальную 1fr (доля доступного пространства)
+    */
+    gap: 20px; /* Устанавливает расстояние между элементами сетки */
+}
+
+/* article - селектор по тегу <article> */
+article {
+    background: #2d2d2d; /* Устанавливает темно-серый цвет фона */
+    border-radius: 10px; /* Скругляет углы элемента */
+    padding: 15px; /* Добавляет внутренние отступы 15px со всех сторон */
+    text-align: center; /* Выравнивает текст по центру */
+    transition: transform 0.3s; /* Добавляет плавную анимацию трансформации за 0.3 секунды */
+}
+
+/* :hover - псевдокласс для стилей при наведении курсора */
+
+
+/* img - селектор по тегу <img> */
+img {
+    width: 100%; /* Устанавливает ширину 100% от родительского элемента */
+    height: 160px; /* Фиксирует высоту 160px */
+    object-fit: cover; /* Масштабирует изображение с сохранением пропорций и обрезкой */
+    border-radius: 8px; /* Скругляет углы изображения */
+    margin-bottom: 10px; /* Добавляет отступ снизу 10px */
+}
+
+/* h2 - селектор по тегу <h2> */
+h2 {
+    margin-bottom: 8px; /* Добавляет отступ снизу 8px */
+}
+
+/* a - селектор по тегу <a> (ссылки) */
+a {
+    color: white; /* Устанавливает белый цвет текста */
+    text-decoration: none; /* Убирает подчеркивание ссылки */
+}
+
+/* a:hover - стили для ссылки при наведении */
+a:hover {
+    color: #4a90e2; /* Изменяет цвет на синий при наведении */
+}
+
+/* p - селектор по тегу <p> */
+p {
+    color: #b0b0b0; /* Устанавливает серый цвет текста */
+    margin-bottom: 10px; /* Добавляет отступ снизу 10px */
+    font-size: 14px; /* Устанавливает размер шрифта 14px */
+}
+
+/* footer - селектор по тегу <footer> */
+footer {
+    display: flex; /* Включает Flexbox для дочерних элементов */
+    justify-content: space-between; /* Распределяет элементы по краям контейнера */
+}
+
+/* em - селектор по тегу <em> */
+em {
+    background: #4a90e2; /* Устанавливает синий цвет фона */
+    color: white; /* Устанавливает белый цвет текста */
+    padding: 4px 8px; /* Добавляет внутренние отступы: 4px сверху/снизу, 8px слева/справа */
+    border-radius: 12px; /* Скругляет углы для создания "капсулы"*/
+    font-size: 12px; /* Устанавливает размер шрифта 12px */
+    font-style: normal; /* Убирает курсивное начертание (по умолчанию у em) */
+}
+
+b{
+    font-size: 20px;
+    color: #adadad;
+}
